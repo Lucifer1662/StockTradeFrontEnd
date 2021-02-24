@@ -2,14 +2,22 @@
   "name": "stock-front-end",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lucifer1662.github.io/StockTradeFrontEnd",
   "dependencies": {
+    "@auth0/auth0-react": "^1.2.0",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "@types/jest": "^26.0.20",
+    "@types/lodash": "^4.14.168",
     "@types/node": "^12.19.14",
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.10",
+    "context-class": "^1.1.0",
+    "gh-pages": "^3.1.0",
+    "lodash": "^4.17.20",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -20,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
